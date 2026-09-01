@@ -1,5 +1,6 @@
 1.	Adobe, n.d. The different styles of typography. Adobe Creative Cloud. Available at: https://www.adobe.com/za/creativecloud/design/discover/typography.html#the-different-styles-of-typography [Accessed 4 August 2026].
 2.	Adeyemicovenant3, n.d. Key Performance Indicators for Bakeries [CMS Project]. Scribd. Available at: https://www.scribd.com/document/707995858/CMS-PROJECT  [Accessed 4 August 2026].
 3.	Coolors, 2026. Color palette (Bakery Website): #880D1E, #DD2D4A, #F26A8D, #F49CBB, #CBEEF3. [image online] Available at: https://coolors.co/880d1e-dd2d4a-f26a8d-f49cbb-cbeef3     [Accessed 1 September 2026]. 
-4.	Le Cordon Bleu, 2018. What are pâtisserie, boulangerie and viennoiserie? Le Cordon Bleu, 25 September. Available at: https://www.cordonbleu.edu/news/what-are-patisserie-boulangerie-viennoiserie/en  [Accessed 3 August 2026]. 
+4.  MDN Web Docs, 2024. HTML cheatsheet. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet [Accessed 1 September 2026].
+5.	Le Cordon Bleu, 2018. What are pâtisserie, boulangerie and viennoiserie? Le Cordon Bleu, 25 September. Available at: https://www.cordonbleu.edu/news/what-are-patisserie-boulangerie-viennoiserie/en  [Accessed 3 August 2026]. 
 5.	Zeely AI, 2025. Proven bakery marketing ideas and strategies you can use in 2026. Zeely AI, 24 September. Available at: https://zeely.ai/blog/proven-bakery-marketing-ideas-and-strategies/ [Accessed 4 August 2026].
