@@ -25,10 +25,35 @@ It will provide information about the bakery and what they specialize in.
 
 ## Design and User Experience.
 
-Colour scheme - 880D1E, DD2D4A, F26A8D, F49CBB, and CBEEF3.
+Colour scheme - 
+
+<img width="795" height="596" alt="image" src="https://github.com/user-attachments/assets/5cc236ec-7afe-4200-a503-2f713e5c7036" />
+
+figure 1, Coolors, 2026.
+
 Typography - The typography styles are Serif and Sans-Serif (Adobe, n.d.).
 Layout and Design - The Layout direction would be Homepage, About us, Contact us, Enquiries, and Our services. For the design, the top colour codes will be used.
 User Experience - Keeping UI and UX design in mind, building the website with an easy to use interface for each page of the website. Keeping it mobile web friendly and PC web friendly. There will be a forum page, where they can insert their email and personal info. When they submit it will send it to the bakery.
+
+## WireFrames. 
+
+Homepage:
+<img width="783" height="506" alt="image" src="https://github.com/user-attachments/assets/221f2ef4-cc74-49e4-b15e-7f0a457b1b25" />
+
+About Us:
+<img width="781" height="536" alt="image" src="https://github.com/user-attachments/assets/9013bc04-ae09-4140-b1d3-b2b4492fdd62" />
+
+Contact Us: 
+<img width="784" height="666" alt="image" src="https://github.com/user-attachments/assets/2dfd55d1-4ea0-4f6e-9306-35d1296212e1" />
+
+Enquiries:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/605ac28a-91f8-4135-84e3-53f2e00e4a17" />
+
+
+Our Services:
+<img width="685" height="618" alt="image" src="https://github.com/user-attachments/assets/4b38deae-bc1a-42b0-847e-206872f450b1" />
+
+
 
 ## Timeline and Milestones
 
