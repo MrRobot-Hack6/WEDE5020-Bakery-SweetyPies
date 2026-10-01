@@ -5,62 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Title of Page-->
     <title>SweetyPies | Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Heading/Name of organization -->
-    <h1>SweeyPies Bakery</h1>
-    <br />
-    <!-- Nav bar -->
-    <div id="wrapper">
-      <header>
-        <img src="" width="" />
-        <nav id="topLinks">
+    <header class="hero-header">
+      <div class="header-inner">
+        <h1>SweetyPies Bakery</h1>
+        <nav id="toplinks" aria-label="Main navigation">
           <ul>
-            <strong
-              ><li><a href="index.html">Home</a></li></strong
-            >
-            <strong
-              ><li><a href="services.html">Our Services</a></li></strong
-            >
-            <strong
-              ><li><a href="about.html">About Us</a></li></strong
-            >
-            <strong><li>Contact Us</li></strong>
-            <strong
-              ><li><a href="enquiry.html">enquiries</a></li></strong
-            ><!--(MDN Web Docs, 2024)-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active-page">Contact Us</li>
+            <li><a href="enquiry.html">Enquiries</a></li>
           </ul>
         </nav>
-      </header>
-    </div>
-    <!-- Image of Pink Cake -->
-    <img
-      src="_Images/PinkCakeView.jpg"
-      alt="Pink Cake"
-      width="400"
-    /><!--(MDN Web Docs, 2024)-->
-    <br />
-    <!-- Contact details for SweetyPies -->
-    <h2>Contact Us for any further Information!</h2>
-    <br />
-    <!-- Mock Email and cell number for assignment purposes -->
-    <p>Email: SweetyPies@gmail.com</p>
-    <p>Cellphone Number: (+28) 00 000 0000</p>
-    <br />
-    <!-- Mock Location for assignment purposes -->
-    <h3>Our Location</h3>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018.8478942795448!2d28.28332602121872!3d-25.77619259530627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956096c85fd0c3%3A0x6f7c9b23de7e079b!2sEmeris%20-%20Pretoria%20Campus!5e0!3m2!1sen!2sza!4v1788165611585!5m2!1sen!2sza"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-    ></iframe
-    ><!--(MDN Web Docs, 2024)-->
-    <br />
-    <!-- Rights reserved -->
-    <p>All rights reserved to SweetyPies Bakery.</p>
+      </div>
+    </header>
+    <main class="content-wrap">
+      <section class="intro-card">
+        <div class="intro-text">
+          <h3>Contact us for any further information!</h3>
+          <p>Email: SweetyPies@gmail.com</p>
+          <p>Cellphone Number: (+28) 00 000 0000</p>
+        </div>
+        <div class="image-panel">
+          <img
+            src="_Images/PinkCakeView.jpg"
+            alt="Pink decorated cake"
+            width="400"
+          />
+        </div>
+      </section>
+      <section class="stack-card" style="margin-top: 24px">
+        <h3>Our Location ;)</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018.8478942795448!2d28.28332602121872!3d-25.77619259530627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956096c85fd0c3%3A0x6f7c9b23de7e079b!2sEmeris%20-%20Pretoria%20Campus!5e0!3m2!1sen!2sza!4v1788165611585!5m2!1sen!2sza"
+          width="600"
+          height="450"
+          style="border: 0; max-width: 100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe
+        ><!--(Google, n.d.)-->
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>All rights reserved to SweetyPies Bakery</p>
+    </footer>
   </body>
 </html>

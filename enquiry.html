@@ -5,63 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title of page -->
     <title>SweetyPies | Enquiry</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Heading/Name of organization -->
-    <h1>SweeyPies Bakery</h1>
-    <br />
-    <!--Nav Bar -->
-    <div id="wrapper">
-      <header>
-        <img src="" alt="" />
-        <nav id="topLinks">
+    <header class="hero-header">
+      <div class="header-inner">
+        <h1>SweetyPies Bakery</h1>
+
+        <nav id="toplinks" aria-label="Main navigation">
           <ul>
-            <strong
-              ><li><a href="index.html">Home</a></li></strong
-            >
-            <strong
-              ><li><a href="services.html">Our Services</a></li></strong
-            >
-            <strong
-              ><li><a href="about.html">About us</a></li></strong
-            >
-            <strong
-              ><li><a href="contact.html">Contact Us</a></li></strong
-            ><!--(MDN Web Docs, 2024)-->
-            <strong><li>Enquiries</li></strong>
+            <li><a href="index.html"></a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active-page">Enquiries</li>
           </ul>
         </nav>
-      </header>
-    </div>
-    <!-- Image of Decorated cupcake -->
-    <img
-      src="_Images/WaffleCupcakeView.jpg"
-      alt="Waffle decorated themed cupcake"
-      width="400"
-    /><!--(MDN Web Docs, 2024)-->
-    <br />
-    <!-- Google Form for enquiries -->
+      </div>
+    </header>
+    <main class="content-wrap">
+      <section class="stack-card">
+        <div class="image-panel">
+          <img
+            src="_Images/WaffleCupcakeView.jpg"
+            alt="Waffle decorated themed cupcake"
+            width="400"
+          />
+        </div>
+        <h3>Enquiry form:</h3>
+        <p>Please fill in the google form.</p>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeFwRWFMCFB8WNyS339AY7pqFd0ABdLwMuZixcmpgB_KFfotQ/viewform?embedded=true"
+          width="640"
+          height="811"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
+        <!--(Google, n.d.)-->
 
-    <h2>Enquiry form:</h2>
-    <br />
-    <p>Please fill in the google form.</p>
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeFwRWFMCFB8WNyS339AY7pqFd0ABdLwMuZixcmpgB_KFfotQ/viewform?embedded=true"
-      width="640"
-      height="811"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      >Loading…</iframe
-    ><!--(MDN Web Docs, 2024)-->
-    <br />
-    <!-- image of StrawberryCupcakes -->
-    <img
-      src="_Images/StrawberryCupcakeView.jpg"
-      alt="StrawBerry Cupcakes"
-      width="400"
-    /><!--(MDN Web Docs, 2024)-->
-    <br />
-    <h3>Please contact us for any further information!</h3>
+        <div class="image-panel">
+          <img
+            src="_Images/StrawberryCupcakeView.jpg"
+            alt="StrawBerry Cupcakes"
+            width="400"
+          />
+        </div>
+
+        <h3>Please contact us for any further infortmation!</h3>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>All rights reserved to SweetyPies Bakery.</p>
+    </footer>
   </body>
 </html>

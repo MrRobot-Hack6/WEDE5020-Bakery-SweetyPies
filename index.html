@@ -4,63 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SweetyPies | Home</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Heading/Name of organization -->
-    <h1>SweeyPies Bakery</h1>
-    <br />
-    <!-- Nav Bar -->
-    <div id="wrapper">
-      <header>
-        <nav id="topLinks">
+    <header class="hero-header">
+      <div class="header-inner">
+        <h1>SweetyPies Bakery</h1>
+        <nav id="toplinks" aria-label="Main navigation">
           <ul>
-            <strong><li>Home</li></strong>
-            <strong
-              ><li><a href="services.html">Our Services</a></li></strong
-            >
-            <strong
-              ><li><a href="about.html">About Us</a></li></strong
-            >
-            <strong
-              ><li><a href="contact.html">Contact Us</a></li></strong
-            >
-            <strong
-              ><li><a href="enquiry.html">enquiries</a></li></strong
-            ><!--(MDN Web Docs, 2024)-->
+            <li class="active-page">Home</li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="enquiry.html">Enquiries</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
+
+    <main class="content-wrap">
+      <section class="intro-card">
+        <div class="intro-text">
+          <h3>What we specialize in!</h3>
+          <p>
+            Here at SweetyPies bakery, we specialize in baked goods such as
+            Boulangerie and Patisserie. We bake your favourite pastries to
+            perfection!
+          </p>
+          <p>
+            Explore our menu in the services section or request a custom order
+            in the enquiries section. For any orders from our menu, please
+            contact us to place the order.
+          </p>
+        </div>
+
+        <div class="image-panel">
+          <img
+            src="_Images/ChocPastry.jpg"
+            alt="Chocolate pastries"
+            width="400"
+          />
+        </div>
+      </section>
+    </main>
+
+    <div class="content-wrap order-treat">
+      <ul>
+        <li><a href="enquiry.html">Order Now!</a></li>
+      </ul>
     </div>
-    <br />
-    <!-- Hero Image -->
-    <img
-      src="_Images/BakeryView.jpg"
-      alt="View of bakery"
-      width="400"
-    /><!--(MDN Web Docs, 2024)-->
-    <br />
-    <!-- Introduction -->
-    <h3>What we specialize in!</h3>
-    <br />
-    <p>
-      Here at SweetyPies bakery, We specialize in baked goods.
-      <br />
-      Such as Boulangerie and Patisserie.
-      <br />
-      We bake your favourite pastries to perfection!
-      <br />
-      Explore our menu at the our services section or request a custom order at
-      the enquiries section.
-      <br />
-      for any orders from our menu please contact us to place the order.
-    </p>
-    <br />
-    <img
-      src="_Images/ChocPastry.jpg"
-      alt="Chocolate Pastries"
-      width="400"
-    /><!--(MDN Web Docs, 2024)-->
-    <br />
-    <p>All rights reserved to SweetyPies Bakery.</p>
+
+    <footer class="site-footer">
+      <p>All rights reserved to SweetyPies Bakery.</p>
+    </footer>
   </body>
 </html>

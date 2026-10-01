@@ -5,49 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title of page -->
     <title>SweetyPies | About Us</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Heading/Name of organization -->
-    <h1>SweeyPies Bakery</h1>
-    <br />
-    <!--Nav Bar -->
-    <div id="wrapper">
-      <header>
-        <img src="" width="" />
-        <nav id="topLinks">
+    <header class="hero-header">
+      <div class="header-inner">
+        <h1>SweeyPies Bakery</h1>
+        <nav id="toplinks" aria-label="Main navigation">
           <ul>
-            <strong
-              ><li><a href="index.html">Home</a></li></strong
-            >
-            <strong
-              ><li><a href="services.html">Our Services</a></li></strong
-            >
-            <strong><li>About Us</li></strong>
-            <strong
-              ><li><a href="contact.html">Contact Us</a></li></strong
-            >
-            <strong
-              ><li><a href="enquiry.html">enquiries</a></li></strong
-            ><!--(MDN Web Docs, 2024)-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a class="active-page">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="enquiry.html">Enquiries</a></li>
           </ul>
         </nav>
-      </header>
-    </div>
-    <br />
-    <!-- Image of Muffins -->
-    <img src="_Images/MuffinView.jpg" alt="Fruity Muffins" width="400" /><!--(MDN Web Docs, 2024)-->
-    <br>
-    <!-- Description of Bakery -->
-    <h2>SweetyPies Bakery | Who we are!</h1>
-      <br>
-      <p>Started as a small bakery, creating the most delicious treats for the community of Pretoria.
-        <br>
-        Our Bakery specializes in Boulangerie, Patisserie, and we do custom orders, making your vision of a delicious treat a reality.
-        <br>
-        We are here to serve the communities, with fresh and delicious treats while still keeping to your diatery standards 
-      </p>
+      </div>
+    </header>
 
+    <main class="content-wrap">
+      <section class="intro-card">
+        <div class="intro-text">
+          <h3>SweetyPies Bakery | Who we are!</h3>
+          <p>
+            Started as a small bakery, creating the most delicious treats for
+            the community of pretoria.
+          </p>
+          <p>
+            Our Bakery specializes in Boulangerie, pasterie, and we do cutom
+            orders, making your vision of a delicious treat a reality
+          </p>
+          <p>
+            We are here to serve the communities, with fresh delicious treats
+            while still keeping to your dietary standards.
+          </p>
+        </div>
+
+        <div class="image-panel">
+          <img src="_Images/MuffinView.jpg" alt="Fruity Muffins" width="400" />
+          <!--(MDN Web Docs 2024)-->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
       <!-- Rights reserved -->
-    <p>All rights reserved to SweetyPies Bakery.</p>
+      <p>All rights reserved to SweetyPies Bakery.</p>
+    </footer>
   </body>
 </html>
