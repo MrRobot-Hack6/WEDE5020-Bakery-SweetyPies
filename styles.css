@@ -42,5 +42,33 @@ header .hero-header h1 {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #880d1e border 1px solid #555555;
+  background-color: #880d1e;
+  border: 1px solid #555555;
+}
+
+#toplinks li {
+  text-align: center;
+  border-bottom: 1px solid #555555;
+}
+
+#toplinks li:last-child {
+  border-bottom: none;
+}
+
+#toplinks li a,
+#toplinks li {
+  display: block;
+  color: White;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#toplinks li a:hover {
+  background-color: #dd2d4a;
+  color: white;
+}
+
+#toplinks li.active-page {
+  background-color: lightpink;
 }
