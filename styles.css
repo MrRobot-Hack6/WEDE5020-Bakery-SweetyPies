@@ -1,3 +1,10 @@
+/* CSS Document */
+
+/* import Google fonts (W3Schools, [s.a.]h.) */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
+
+/*Universal selector + boc-sizing: border-box so padding/borders dont enlarge elements beyond their set width (w3schools, [s.a.]a.)*/
+
 * {
   box-sizing: border-box;
 }
@@ -5,18 +12,73 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
   background-color: #dff4f8;
   color: #2f1a1c;
   line-height: 1.6;
 }
+
+/* max-width: 100% keeps images responsive, instead of overflowing their container on smaller screens (W3Schools, [s.a.]b.) */
 
 img {
   max-width: 100%;
   display: block;
 }
 
+/* Typography, one shared heading style. Every page uses the same font, weight, and colour instead of repeating it per class */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #880d1e;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+}
+
+/* Small item captions, same family, lighter weight and touch of letter spacing so they read as labels rather than headings */
+h4,
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4a2b2d;
+}
+
+p {
+  font-size: 1.05rem;
+  margin: 0 0 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #880d1e;
+}
+
+/* Header */
+
 header.hero-header {
+  /* Layering a linear-gradient() over a background image so the nav text stays readable against the photo (w3Schools, [s.a]c.) */
+
   background-image:
     linear-gradient(rgba(203, 238, 243, 0.78), rgba(203, 238, 243, 0.78)),
     url("_Images/BakeryView.jpg");
@@ -29,11 +91,19 @@ header.hero-header {
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-header .hero-header h1 {
+header.hero-header h1 {
   margin: 0 0 10px;
   color: #880d1e;
+  /* clamp() sets a responsive font-size that scales with viewport width but never goes below 2rem or above 3.2rem(W3Schools, [s.a.]d.) */
   font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
@@ -45,7 +115,7 @@ header .hero-header h1 {
   background-color: #880d1e;
   border: 1px solid #555555;
 }
-
+/* :last-child removes the bottom border from the final nav item only, avoiding a double border at the end of the list (W3Schools, [s.a.]e.) */
 #toplinks li {
   text-align: center;
   border-bottom: 1px solid #555555;
@@ -64,6 +134,8 @@ header .hero-header h1 {
   font-weight: 600;
 }
 
+/* :hover changes the background colour on mouse-over to give visual feedback on interactive nav items (W3Schools, [s.a]f.) */
+
 #toplinks li a:hover {
   background-color: #dd2d4a;
   color: white;
@@ -71,4 +143,79 @@ header .hero-header h1 {
 
 #toplinks li.active-page {
   background-color: lightpink;
+}
+/* Content */
+
+.content-wrap {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.intro-card {
+  /* CSS Grid lays the text and image side by side in two columns
+     (W3Schools, [s.a.]i). */
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 26px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.image-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.image-panel img {
+  width: min(100%, 420px);
+  border-radius: 14px;
+  border: 4px solid rgba(136, 13, 30, 0.12);
+  padding: 30px;
+}
+
+.stack-card .image-panel {
+  margin: 18px 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px 10px 30px;
+  color: #4a2b2d;
+  font-weight: 600;
+}
+/* Media query collapses the two-column grid to one column on narrow
+   screens (W3Schools, [s.a.]j). */
+@media (max-width: 700px) {
+  .intro-card {
+    grid-template-columns: 1fr;
+    padding: 22px 18px;
+  }
+}
+
+.order-treat {
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.order-treat ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-treat a {
+  display: inline-block;
+  background-color: #880d1e;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 14px 36px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(136, 13, 30, 0.25);
+}
+
+.order-treat a:hover {
+  background-color: #dd2d4a;
 }
