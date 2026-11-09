@@ -3,8 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SweetyPies | Home</title>
+    <title>
+      SweetyPies Bakery Pretoria | Boulangerie, Patisserie & Custom Cakes
+    </title>
+    <!-- SEO. title and meta description (W3Schools, [s.a.]x.) -->
+    <meta
+      name="description"
+      content="Fresh croissants, breads, pastries and custom cakes from SweetyPies Bakery in Pretoria. Browse our menu and order today."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      property="og:title"
+      content="SweetyPies Bakery Pretoria | Boulangerie, Patisserie & Custom Cakes"
+    />
+    <meta
+      property="og:description"
+      content="Fresh croissants, breads, pastries and custom cakes from SweetyPies Bakery in Pretoria. Browse our menu and order today."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Local SEO. schema.org structured data (schema.org, [s.a.]) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "SweetyPies Bakery",
+        "areaServed": "Pretoria",
+        "email": "SweetyPies@gmail.com",
+        "servesCuisine": ["Boulangerie", "Patisserie"]
+      }
+    </script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="hero-header">
@@ -21,39 +50,34 @@
         </nav>
       </div>
     </header>
-
     <main class="content-wrap">
-      <section class="intro-card">
+      <section class="intro-card fade">
         <div class="intro-text">
-          <h3>What we specialize in!</h3>
+          <h2>What we specialise in!</h2>
           <p>
-            Here at SweetyPies bakery, we specialize in baked goods such as
+            Here at SweetyPies Bakery, we specialise in baked goods such as
             Boulangerie and Patisserie. We bake your favourite pastries to
             perfection!
           </p>
           <p>
-            Explore our menu in the services section or request a custom order
-            in the enquiries section. For any orders from our menu, please
-            contact us to place the order.
+            Explore our <a href="services.html">menu</a> or request a custom
+            order in the <a href="enquiry.html">enquiries</a> section.
           </p>
         </div>
-
         <div class="image-panel">
           <img
             src="_Images/ChocPastry.jpg"
-            alt="Chocolate pastries"
+            alt="Freshly baked chocolate pastries"
             width="400"
           />
         </div>
       </section>
+      <div class="order-treat">
+        <ul>
+          <li><a href="enquiry.html">Order Now!</a></li>
+        </ul>
+      </div>
     </main>
-
-    <div class="content-wrap order-treat">
-      <ul>
-        <li><a href="enquiry.html">Order Now!</a></li>
-      </ul>
-    </div>
-
     <footer class="site-footer">
       <p>All rights reserved to SweetyPies Bakery.</p>
     </footer>

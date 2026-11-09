@@ -3,18 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title of page -->
-    <title>SweetyPies | Enquiry</title>
+    <title>Enquiries & Custom Orders | SweetyPies Bakery Pretoria</title>
+    <!-- SEO: title and meta description (W3Schools, [s.a.]x.) -->
+    <meta
+      name="description"
+      content="Enquire about SweetyPies menu items or custom cakes and get an instant price estimate and availability check."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      property="og:title"
+      content="Enquiries & Custom Orders | SweetyPies Bakery Pretoria"
+    />
+    <meta
+      property="og:description"
+      content="Enquire about SweetyPies menu items or custom cakes and get an instant price estimate and availability check."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="hero-header">
       <div class="header-inner">
         <h1>SweetyPies Bakery</h1>
-
         <nav id="toplinks" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html"></a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Our Services</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -24,36 +38,68 @@
       </div>
     </header>
     <main class="content-wrap">
-      <section class="stack-card">
+      <section class="stack-card fade">
         <div class="image-panel">
           <img
             src="_Images/WaffleCupcakeView.jpg"
-            alt="Waffle decorated themed cupcake"
+            alt="Waffle decorated cupcake"
             width="400"
           />
         </div>
-        <h3>Enquiry form:</h3>
-        <p>Please fill in the google form.</p>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeFwRWFMCFB8WNyS339AY7pqFd0ABdLwMuZixcmpgB_KFfotQ/viewform?embedded=true"
-          width="640"
-          height="811"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
+        <h2>Enquiry form</h2>
+        <p>
+          Choose your treat and date to see an estimated cost and whether we are
+          available.
+        </p>
+        <!-- AJAX target: swap for your own form service (W3Schools, [s.a.]o.) -->
+        <form
+          id="enquiry"
+          action="https://jsonplaceholder.typicode.com/posts"
+          method="post"
+          novalidate
         >
-        <!--(Google, n.d.)-->
-
-        <div class="image-panel">
-          <img
-            src="_Images/StrawberryCupcakeView.jpg"
-            alt="StrawBerry Cupcakes"
-            width="400"
-          />
-        </div>
-
-        <h3>Please contact us for any further infortmation!</h3>
+          <label
+            >Full name<input
+              name="name"
+              required
+              minlength="2"
+              autocomplete="name" /><span class="err"></span
+          ></label>
+          <label
+            >Email<input
+              name="email"
+              type="email"
+              required
+              autocomplete="email" /><span class="err"></span
+          ></label>
+          <label
+            >Item<select name="item" required></select
+            ><span class="err"></span
+          ></label>
+          <label
+            >Quantity<input
+              name="qty"
+              type="number"
+              min="1"
+              max="50"
+              value="1"
+              required /><span class="err"></span
+          ></label>
+          <label
+            >Date needed<input name="date" type="date" required /><span
+              class="err"
+            ></span
+          ></label>
+          <label
+            >Notes (dietary needs, delivery or pick-up)<textarea
+              name="notes"
+              rows="4"
+            ></textarea
+            ><span class="err"></span
+          ></label>
+          <button class="btn">Get my quote</button>
+          <p class="result" role="status"></p>
+        </form>
       </section>
     </main>
     <footer class="site-footer">

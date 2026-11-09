@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SweetyPies | Services</title>
+    <title>Our Menu | SweetyPies Bakery Pretoria</title>
+    <!-- SEO. title and meta description (W3Schools, [s.a.]x.) -->
+    <meta
+      name="description"
+      content="Search and sort the SweetyPies menu: croissants, breads, muffins, cupcakes and custom cakes baked fresh in Pretoria."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta property="og:title" content="Our Menu | SweetyPies Bakery Pretoria" />
+    <meta
+      property="og:description"
+      content="Search and sort the SweetyPies menu: croissants, breads, muffins, cupcakes and custom cakes baked fresh in Pretoria."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="hero-header">
       <div class="header-inner">
         <h1>SweetyPies Bakery</h1>
-
         <nav id="toplinks" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,29 +36,28 @@
     </header>
     <main class="content-wrap">
       <section class="stack-card">
-        <h3>SweetyPies Menu!</h3>
-        <p>Explore our menu and contact us to place an order!</p>
-
-        <div class="image-panel">
-          <img src="_Images/CroisantsView.jpg" alt="Croisants" width="400" />
-        </div>
-        <h5>Freshly baked Croissants!</h5>
-
-        <div class="image-panel">
-          <img src="_Images/PinkCakeView.jpg" alt="Pink Cake" width="400" />
-        </div>
-        <h5>Beautiful customizable cakes!</h5>
-
-        <div class="image-panel">
-          <img src="_Images/BreadView.jpg" alt="Breads" width="400" />
-        </div>
-        <h5>All kinds of freshly baked breads!</h5>
+        <h2>SweetyPies Menu!</h2>
         <p>
-          Once you have picked your item, please contact us to place the order,
-          and confirm if it will be delivery or pick-up.
+          Search, sort and click a photo to enlarge it. Then
+          <a href="enquiry.html">place an enquiry</a> to order.
         </p>
+        <div class="controls">
+          <input
+            id="search"
+            type="search"
+            placeholder="Search treats..."
+            aria-label="Search treats"
+          />
+          <select id="sort" aria-label="Sort treats">
+            <option value="n">Name (A-Z)</option>
+            <option value="p">Price (low to high)</option>
+            <option value="pd">Price (high to low)</option>
+          </select>
+        </div>
+        <div id="products" class="grid"></div>
       </section>
     </main>
+    <dialog id="lb"><img alt="" /></dialog>
     <footer class="site-footer">
       <p>All rights reserved to SweetyPies Bakery.</p>
     </footer>

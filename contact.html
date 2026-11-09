@@ -3,9 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Title of Page-->
-    <title>SweetyPies | Contact Us</title>
+    <title>Contact Us | SweetyPies Bakery Pretoria</title>
+    <!-- SEO: title and meta description (W3Schools, [s.a.]x.) -->
+    <meta
+      name="description"
+      content="Contact SweetyPies Bakery in Pretoria by email or phone, send us a message or find us on the map."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      property="og:title"
+      content="Contact Us | SweetyPies Bakery Pretoria"
+    />
+    <meta
+      property="og:description"
+      content="Contact SweetyPies Bakery in Pretoria by email or phone, send us a message or find us on the map."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Leaflet map library (Leaflet, [s.a.]) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="hero-header">
@@ -23,11 +51,11 @@
       </div>
     </header>
     <main class="content-wrap">
-      <section class="intro-card">
+      <section class="intro-card fade">
         <div class="intro-text">
-          <h3>Contact us for any further information!</h3>
+          <h2>Contact us for any further information!</h2>
           <p>Email: SweetyPies@gmail.com</p>
-          <p>Cellphone Number: (+28) 00 000 0000</p>
+          <p>Cellphone Number: (+27) 00 000 0000</p>
         </div>
         <div class="image-panel">
           <img
@@ -37,22 +65,60 @@
           />
         </div>
       </section>
-      <section class="stack-card" style="margin-top: 24px">
-        <h3>Our Location ;)</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018.8478942795448!2d28.28332602121872!3d-25.77619259530627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956096c85fd0c3%3A0x6f7c9b23de7e079b!2sEmeris%20-%20Pretoria%20Campus!5e0!3m2!1sen!2sza!4v1788165611585!5m2!1sen!2sza"
-          width="600"
-          height="450"
-          style="border: 0; max-width: 100%"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-        ></iframe
-        ><!--(Google, n.d.)-->
+      <section class="stack-card fade" style="margin-top: 24px">
+        <h2>Send us a message</h2>
+        <form id="contact" novalidate>
+          <label
+            >Full name<input
+              name="name"
+              required
+              minlength="2"
+              autocomplete="name" /><span class="err"></span
+          ></label>
+          <label
+            >Email<input
+              name="email"
+              type="email"
+              required
+              autocomplete="email" /><span class="err"></span
+          ></label>
+          <label
+            >Cellphone<input
+              name="phone"
+              type="tel"
+              required
+              pattern="(\+27|0)[0-9]{9}"
+              title="e.g. 0821234567 or +27821234567"
+              autocomplete="tel" /><span class="err"></span
+          ></label>
+          <label
+            >Type of message<select name="type" required>
+              <option value="">Choose...</option>
+              <option>General question</option>
+              <option>Feedback</option>
+              <option>Complaint</option></select
+            ><span class="err"></span
+          ></label>
+          <label
+            >Message<textarea
+              name="message"
+              rows="5"
+              required
+              minlength="10"
+            ></textarea
+            ><span class="err"></span
+          ></label>
+          <button class="btn">Send email</button>
+          <p class="result" role="status"></p>
+        </form>
+      </section>
+      <section class="stack-card fade" style="margin-top: 24px">
+        <h2>Our Location ;)</h2>
+        <div id="map" role="region" aria-label="Map showing our location"></div>
       </section>
     </main>
     <footer class="site-footer">
-      <p>All rights reserved to SweetyPies Bakery</p>
+      <p>All rights reserved to SweetyPies Bakery.</p>
     </footer>
   </body>
 </html>

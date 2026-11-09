@@ -219,3 +219,142 @@ header.hero-header h1 {
 .order-treat a:hover {
   background-color: #dd2d4a;
 }
+
+/* ---------- Part 2 additions ---------- */
+/* Fade-in: opacity and transform change smoothly when .show is added (W3Schools, [s.a.]v.) */
+.js .fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s,
+    transform 0.6s;
+}
+.js .fade.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* Auto-fit grid for menu cards (W3Schools, [s.a.]i.) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.72);
+  padding: 16px;
+  border-radius: 14px;
+}
+.card h3 {
+  font-size: 1.1rem;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+.card img:hover {
+  transform: scale(1.04);
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.controls > * {
+  flex: 1 1 200px;
+}
+
+/* Lightbox */
+dialog {
+  border: 0;
+  padding: 0;
+  border-radius: 14px;
+}
+dialog::backdrop {
+  background: rgba(47, 26, 28, 0.85);
+}
+dialog img {
+  max-width: 90vw;
+  max-height: 85vh;
+  cursor: zoom-out;
+}
+
+/* Accordion */
+.acc button {
+  width: 100%;
+  text-align: left;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #880d1e;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.acc button:hover {
+  background: #dd2d4a;
+}
+.acc p {
+  padding: 10px 16px;
+}
+
+/* Forms (W3Schools, [s.a.]k.) */
+form {
+  display: grid;
+  gap: 14px;
+  max-width: 560px;
+}
+label {
+  font-weight: 600;
+}
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 2px solid #f49cbb;
+  border-radius: 8px;
+  font: inherit;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #dd2d4a;
+}
+.err {
+  display: block;
+  min-height: 1em;
+  color: #880d1e;
+  font-size: 0.9rem;
+}
+.btn {
+  justify-self: start;
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 999px;
+  background: #880d1e;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #dd2d4a;
+}
+.result {
+  font-weight: 700;
+  color: #880d1e;
+}
+#map {
+  height: 350px;
+  border-radius: 14px;
+}

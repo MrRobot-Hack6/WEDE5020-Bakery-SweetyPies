@@ -3,53 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title of page -->
-    <title>SweetyPies | About Us</title>
+    <title>About Us | SweetyPies Bakery Pretoria</title>
+    <!-- SEO. title and meta description (W3Schools, [s.a.]x.) -->
+    <meta
+      name="description"
+      content="SweetyPies started as a small Pretoria bakery specialising in Boulangerie, Patisserie and custom orders."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta property="og:title" content="About Us | SweetyPies Bakery Pretoria" />
+    <meta
+      property="og:description"
+      content="SweetyPies started as a small Pretoria bakery specialising in Boulangerie, Patisserie and custom orders."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="hero-header">
       <div class="header-inner">
-        <h1>SweeyPies Bakery</h1>
+        <h1>SweetyPies Bakery</h1>
         <nav id="toplinks" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Our Services</a></li>
-            <li><a class="active-page">About Us</a></li>
+            <li class="active-page">About Us</li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="enquiry.html">Enquiries</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
     <main class="content-wrap">
-      <section class="intro-card">
+      <section class="intro-card fade">
         <div class="intro-text">
-          <h3>SweetyPies Bakery | Who we are!</h3>
+          <h2>SweetyPies Bakery | Who we are!</h2>
           <p>
-            Started as a small bakery, creating the most delicious treats for
-            the community of pretoria.
+            We started as a small bakery, creating the most delicious treats for
+            the community of Pretoria.
           </p>
           <p>
-            Our Bakery specializes in Boulangerie, pasterie, and we do cutom
-            orders, making your vision of a delicious treat a reality
+            Our bakery specialises in Boulangerie and Patisserie, and we do
+            custom orders, making your vision of a delicious treat a reality.
           </p>
           <p>
-            We are here to serve the communities, with fresh delicious treats
-            while still keeping to your dietary standards.
+            We serve our community with fresh treats while keeping to your
+            dietary standards.
           </p>
         </div>
-
         <div class="image-panel">
-          <img src="_Images/MuffinView.jpg" alt="Fruity Muffins" width="400" />
-          <!--(MDN Web Docs 2024)-->
+          <img
+            src="_Images/MuffinView.jpg"
+            alt="Fruity muffins coming out of the oven"
+            width="400"
+          />
         </div>
       </section>
+      <section class="stack-card acc fade" style="margin-top: 24px">
+        <h2>Frequently asked questions</h2>
+        <button aria-expanded="false">Do you offer delivery?</button>
+        <p hidden>
+          Yes. Tell us in your enquiry whether you want delivery or pick-up.
+        </p>
+        <button aria-expanded="false">Can you cater for dietary needs?</button>
+        <p hidden>
+          Yes, mention any dietary requirements in your enquiry and we will
+          adapt the recipe.
+        </p>
+        <button aria-expanded="false">
+          How much notice do custom cakes need?
+        </button>
+        <p hidden>Custom cakes need at least 3 days' notice.</p>
+      </section>
     </main>
-
     <footer class="site-footer">
-      <!-- Rights reserved -->
       <p>All rights reserved to SweetyPies Bakery.</p>
     </footer>
   </body>

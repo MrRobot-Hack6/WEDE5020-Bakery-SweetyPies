@@ -62,6 +62,38 @@ Timeline - 3-4 Months in total for full completion. Month 1 would focus on HTML.
 
 - Part 1 is purely focused on HTML. No design or any real functionality will be added
 
+## Part 3: JavaScript, SEO and Forms
+
+- Dynamic menu (services.html): products are rendered from one JavaScript array, with search, sort and a click-to-enlarge lightbox.
+- Accordion FAQ (about.html), scroll fade-in animations and hover transitions on every page.
+- Interactive Leaflet map (contact.html).
+- contact.html: validated form that compiles the message into an email to SweetyPies@gmail.com.
+- enquiry.html: validated form that returns a cost estimate and availability check, then posts with AJAX (fetch).
+- SEO: title tags, meta descriptions, one h1 and h2/h3 hierarchy, descriptive alt text, internal links, lazy-loaded images, Bakery structured data, robots.txt and sitemap.xml.
+- Security: referrer policy, input validation, HTTPS via GitHub Pages.
+
+## Additional references (Part 3)
+
+- Leaflet, [s.a.]. Leaflet quick start guide. [online] Available at: https://leafletjs.com/examples/quick-start/ [Accessed 9 November 2026].
+- OpenStreetMap, [s.a.]. Copyright and licence. [online] Available at: https://www.openstreetmap.org/copyright [Accessed 9 November 2026].
+- Schema.org, [s.a.]. Bakery. [online] Available at: https://schema.org/Bakery [Accessed 9 November 2026].
+- Sitemaps.org, [s.a.]. Sitemaps XML format. [online] Available at: https://www.sitemaps.org/protocol.html [Accessed 9 November 2026].
+- W3Schools, [s.a.]i. CSS grid layout. [online] Available at: https://www.w3schools.com/css/css_grid.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]k. HTML forms. [online] Available at: https://www.w3schools.com/html/html_forms.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]l. HTML input attributes. [online] Available at: https://www.w3schools.com/html/html_form_attributes.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]m. JavaScript validation API. [online] Available at: https://www.w3schools.com/js/js_validation_api.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]n. JavaScript form validation. [online] Available at: https://www.w3schools.com/js/js_validation.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]o. JavaScript fetch API. [online] Available at: https://www.w3schools.com/js/js_api_fetch.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]p. HTML dialog tag. [online] Available at: https://www.w3schools.com/tags/tag_dialog.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]q. JavaScript array filter() method. [online] Available at: https://www.w3schools.com/jsref/jsref_filter.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]r. JavaScript array sort() method. [online] Available at: https://www.w3schools.com/jsref/jsref_sort.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]s. JavaScript template literals. [online] Available at: https://www.w3schools.com/js/js_string_templates.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]t. JavaScript intersection observer API. [online] Available at: https://www.w3schools.com/js/js_api_intersection_observer.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]u. How to create an accordion. [online] Available at: https://www.w3schools.com/howto/howto_js_accordion.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]v. CSS transitions. [online] Available at: https://www.w3schools.com/css/css3_transitions.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]w. JavaScript window location. [online] Available at: https://www.w3schools.com/js/js_window_location.asp [Accessed 9 November 2026].
+- W3Schools, [s.a.]x. HTML meta tag. [online] Available at: https://www.w3schools.com/tags/tag_meta.asp [Accessed 9 November 2026].
+
   ## References used in this project
 
 - Adeyemicovenant3, [s.a.]. Key Performance Indicators for Bakeries [CMS Project]. Scribd. Available at: https://www.scribd.com/document/707995858/CMS-PROJECT [Accessed 4 August 2026].
